@@ -4,8 +4,10 @@
 // document.write('Hello')
 
 // }
-// document.querySelector('#box-1').addEventListener('click', function() {
+
+// document.querySelector('#box-1').addEventListener('dblclick', function() {
 //     document.querySelector('#box-1').style.backgroundColor = 'red'
+//     console.log('db click');
 // })
 
 
@@ -39,9 +41,9 @@
 // };
 
 // document.getElementById('box-4').addEventListener('click', abc);
-// document.getElementById('box-4').addEventListener('click',function() {
-//     console.log('Waqar')
-// });
+// // document.getElementById('box-4').addEventListener('click',function() {
+// //     console.log('Waqar')
+// // });
 
 
 // document.getElementById('box-4').addEventListener('dblclick', ()=>{
@@ -51,36 +53,36 @@
 
 // ------------------usage of this======
 
-// document.getElementById('box-4').addEventListener('dblclick', function() {
-//     this.style.border = '2px solid red';
-//     this.style.backgroundColor = 'blue';
-// });
+document.getElementById('box-4').addEventListener('dblclick', function() {
+    this.style.border = '2px solid red';
+    this.style.backgroundColor = 'blue';
+});
 
 
 
 // --------------Remove Event Listner-------
 
-document.querySelector('#box-5').addEventListener('mouseleave', check);
-document.querySelector('#box-5').addEventListener('click', remove);
+// document.querySelector('#box-5').addEventListener('mouseleave', check);
+// document.querySelector('#box-5').addEventListener('click', remove);
 
-function check() {
-    document.querySelector('#box-5').style.border = '5px solid blue'
-}
+// function check() {
+//     document.querySelector('#box-5').style.border = '5px solid blue'
+// }
 
 
-// -------
-function remove(){
+// // // -------
+// function remove(){
 
-    document.querySelector('#box-5').removeEventListener('mouseleave', check)
+//     document.querySelector('#box-5').removeEventListener('mouseleave', check)
     
-}
+// }
 
 
 
 
-// ================= Events Properties =======================
+// // ================= Events Properties =======================
 
-// we can pass a parameter to access the properties using that object
+// // we can pass a parameter to access the properties using that object
 
 const eventprops = document.getElementById('box-4')
 eventprops.addEventListener('click', (e) => {
