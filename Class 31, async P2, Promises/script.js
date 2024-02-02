@@ -1,21 +1,20 @@
-// const promi = new Promise(function(resolve, reject) {
-    
+// new Promise(function( resolve, reject ){
 // setTimeout( ()=>{
-//     console.log('Hello Asheel');
+//     console.log('Hello here');
 // }, 3000 )
 
 // resolve()
-
 // })
 // .then(() => {
 //     console.log('promise fullfilled');
 // })
 
+
 // --------------------Example 2------------------------------------
 
 // const myPromise = new Promise((resolve, reject) => {
 //     setTimeout(() => {
-//     const success = false;
+//     const success = true;
 
 //     if (success) {
 //     // Resolve the promise with a value
@@ -37,12 +36,12 @@
 
 // ----------------------- Example 3-----------------------------
 
-// const promiseThree = new Promise(function(resolve, reject){
-//     setTimeout(function(){
-//         resolve({username: "abc", email: "abc@example.com"})
-//     }, 1000)
-// })
+const promiseThree = new Promise(function(resolve, reject){
+    setTimeout(function(){
+        resolve({username: "abc", email: "abc@example.com"})
+    }, 1000)
+})
 
-// promiseThree.then(function(user){
-//     console.log(user);
-// })
+promiseThree.then(function(user){
+    console.log(user);
+})
