@@ -2,8 +2,8 @@
 // 1. Event Handler
 // 2. Event Listner
 
-// function myfunc(){
-//     console.log('i was clicked');
+// function clk() {
+//     console.log('The box was clicked');
 // }
 
 // // // ------------------------------------
@@ -13,15 +13,15 @@
 
 
 // // =================
-// const onkp = ()=>{
+// const onkp = () => {
 //     console.log("key was pressed");
 // }
 
-// const onkd = ()=>{
+// const onkd = () => {
 //     console.log("key was down");
 // }
 
-// const onkup = ()=>{
+// const onkup = () => {
 //     console.log("key was down was pressed");
 
 // }
@@ -30,20 +30,21 @@
 
 // // =================Event Listners=======================
 
-const box_3 = document.getElementById('box-3');
+// const box_3 = document.querySelector("#box-3")
 
-function clk () {
-    console.log('hello from clb');
-}
+// let clk = function () {
+//     console.log('hello from clb');
 
-box_3.addEventListener( 'click', clk)
+// }
+// box_3.addEventListener('click', clk
+// )
 
 // -----------------Eg 2========
 
 const btn = document.querySelector('button')
 const bdy = document.querySelector('body')
 
-btn.addEventListener( 'click', function() {
+btn.addEventListener('click', function () {
     bdy.style.backgroundColor = 'blue'
     bdy.style.color = 'white'
-} )
+})

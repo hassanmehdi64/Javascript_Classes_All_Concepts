@@ -14,6 +14,7 @@
 
 // window.onload = addRequiredClass
 
+
 let hamburger = document.querySelector('.hamburger')
 let mobileNav = document.querySelector('.nav-list')
 
@@ -21,8 +22,9 @@ let bars = document.querySelectorAll('.hamburger span')
 
 let isActive = false
 
-hamburger.addEventListener('click', function() {
+hamburger.addEventListener('click', function () {
     mobileNav.classList.toggle('open')
+
 
     if(!isActive) {
         bars[0].style.transform = 'rotate(45deg)'

@@ -9,7 +9,13 @@
 // console.log('Hello One');
 
 // setTimeout(function() {
-    
+//     console.log("hello js");
+// }, 2000)
+
+// console.log('Hello One two');
+
+// setTimeout(function() {
+
 //     console.log('waqar');
 
 // }, 2000)
@@ -27,7 +33,7 @@
 
 // --------Example 2--------------------
 
-const changeText = function(){
+const changeText = function () {
     document.querySelector('h1').innerHTML = "Hello World!"
 }
 
@@ -41,9 +47,9 @@ const changeMe = setTimeout(changeText, 3000)
 
 // clearTimeout(changeMe)
 
-document.querySelector('#stop').
-addEventListener('click', function(){
+// document.querySelector('#stop').
+//     addEventListener('click', function () {
 
-    clearTimeout(changeMe)
-    console.log('STOPPED');
-})
+//         clearTimeout(changeMe)
+//         console.log('STOPPED');
+//     })

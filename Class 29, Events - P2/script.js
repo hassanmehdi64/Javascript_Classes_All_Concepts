@@ -1,6 +1,6 @@
 
 // function myfunc() {
-    
+
 // document.write('Hello')
 
 // }
@@ -17,9 +17,9 @@
 // function abc(){
 
 //     console.log('the box-3 was clicked');
-       
+
 //     document.getElementById('box-3').style.backgroundColor = 'blue';
-    
+
 //     }
 
 
@@ -41,9 +41,6 @@
 // };
 
 // document.getElementById('box-4').addEventListener('click', abc);
-// // document.getElementById('box-4').addEventListener('click',function() {
-// //     console.log('Waqar')
-// // });
 
 
 // document.getElementById('box-4').addEventListener('dblclick', ()=>{
@@ -53,10 +50,11 @@
 
 // ------------------usage of this======
 
-document.getElementById('box-4').addEventListener('dblclick', function() {
-    this.style.border = '2px solid red';
-    this.style.backgroundColor = 'blue';
-});
+// document.getElementById('box-4').addEventListener('dblclick', function() {
+//     this.style.border = '2px solid red';
+//     this.style.backgroundColor = 'blue';
+// });
+
 
 
 
@@ -70,11 +68,11 @@ document.getElementById('box-4').addEventListener('dblclick', function() {
 // }
 
 
-// // // -------
+// // // // -------
 // function remove(){
 
 //     document.querySelector('#box-5').removeEventListener('mouseleave', check)
-    
+
 // }
 
 
@@ -86,13 +84,13 @@ document.getElementById('box-4').addEventListener('dblclick', function() {
 
 const eventprops = document.getElementById('box-4')
 eventprops.addEventListener('click', (e) => {
-    
-console.log(e); 
+
+    // console.log(e);
 
 
-console.log(e.type);
-console.log(e.target);
-console.log(e.clientX, e.clientY);
+    console.log(e.type);
+    console.log(e.target);
+    console.log(e.clientX, e.clientY);
 
 })
 

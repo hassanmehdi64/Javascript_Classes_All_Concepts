@@ -3,32 +3,32 @@
 //     setTimeout(function(){
 //         let error = false
 //         if (!error) {
-//             resolve({username: "abc", password: "123"})
+//             resolve({username: "Aryan", password: "123"})
 //         } else {
 //             reject('ERROR: Something went wrong')
 //         }
-//     }, 1000)
-// })           // ---promise chaning---
+//     }, 3000)
+//     // ---promise chaning---
+// }).then((user) => {
+//     //  console.log(user.username);
+//     return user.username
+//   })
+//   .then((username) => {
+//     console.log(`username is ${username}`);
+// }).catch( (error)=>{
+//    console.log(error);
+// } ).finally(() => console.log("The promise is either resolved or rejected"))
+           
 
-// promiseFour
-// .then((uesr) => {
-    //     // console.log(user);
-    //     return user.username
-// }).then((username) => {
-//     console.log(`the username is ${username}`);
-// })
-// .catch(function(error){
-//     console.log(error);
-// })
-// .finally(() => console.log("The promise is either resolved or rejected"))
 
+// -------------------------------------------------------------------
 
 // ----------------Async Await---------------------------------
 
 const promiseFive = new Promise(function(resolve, reject){
     setTimeout(function(){
-        let error = false
-        if (!error) {
+        let error = true
+        if (error) {
             resolve({username: "javascript", password: "123"})
         } else {
             reject('ERROR: JS went wrong')
@@ -36,14 +36,15 @@ const promiseFive = new Promise(function(resolve, reject){
     }, 1000)
 });
 
+
 async function consumePromiseFive(){
-    try {
-        const response = await promiseFive
-        console.log(response.username);
-        
-    } catch (error) {
-        console.log(error);
-    }
+  try {
+    const response = await promiseFive
+    console.log(response.username);
+    
+} catch (error) {
+    console.log(error);
+}
 }
 
 consumePromiseFive()

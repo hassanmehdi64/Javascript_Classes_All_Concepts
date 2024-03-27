@@ -47,3 +47,6 @@ const userEmail = []
 
 const iceTeaPrice = 100
 iceTeaPrice >= 80 ? console.log("less than 80") : console.log("more than 80")
+
+let temp = 70;
+temp >= 60 ? console.log("Temp is greater then 40") : console.log("less than 40");

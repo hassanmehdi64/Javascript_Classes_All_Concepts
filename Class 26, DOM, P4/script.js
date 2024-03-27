@@ -1,5 +1,5 @@
 const parent = document.querySelector('.parent')
-    // console.log(parent);
+    console.log(parent);
 
     // console.log(parent.children);
 
@@ -15,11 +15,11 @@ const parent = document.querySelector('.parent')
     // console.log(parent.firstElementChild);
     // console.log(parent.lastElementChild);
 
-   const dayOne = document.querySelector('.day')
-//     console.log(dayOne.innerHTML);
+//    const dayOne = document.querySelector('.day')
+    // console.log(dayOne.innerHTML);
 
-//     console.log(dayOne.parentElement);
+    // console.log(dayOne.parentElement);
 
-    console.log(dayOne.nextElementSibling);
+    // console.log(dayOne.nextElementSibling);
 
     console.log("NODES: ", parent.childNodes);  

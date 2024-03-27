@@ -1,12 +1,12 @@
-// new Promise(function( resolve, reject ){
-// setTimeout( ()=>{
-//     console.log('Hello here');
-// }, 3000 )
+// new Promise(function (resolve, reject) {
 
-// resolve()
-// })
-// .then(() => {
-//     console.log('promise fullfilled');
+//     setTimeout(() => {
+//         console.log("promise fulfilled");
+//     }, 3000)
+//     resolve()
+
+// }).then(() => {
+//     return "Promise succesfully resolved"
 // })
 
 
@@ -14,7 +14,7 @@
 
 // const myPromise = new Promise((resolve, reject) => {
 //     setTimeout(() => {
-//     const success = true;
+//     const success = false;
 
 //     if (success) {
 //     // Resolve the promise with a value
@@ -26,22 +26,22 @@
 //     reject("Operation failed!");
 //     }
 //     }, 2000); // Simulating a 2-second delay
-    
+
 //    }).then(() => {
 //     console.log("Operation successful!");
 //    }).catch(() => {
 //     console.log('ERROR:Promise failed: Please come tomorrow!');
 //    })
-  
+
 
 // ----------------------- Example 3-----------------------------
 
-const promiseThree = new Promise(function(resolve, reject){
-    setTimeout(function(){
-        resolve({username: "abc", email: "abc@example.com"})
-    }, 1000)
-})
+// const promiseThree = new Promise(function (resolve, reject) {
+//     setTimeout(function () {
+//         resolve({ username: "abc", email: "abc@example.com" })
+//     }, 1000)
+// })
 
-promiseThree.then(function(user){
-    console.log(user);
-})
+// promiseThree.then(function (user) {
+//     console.log(user);
+// })
